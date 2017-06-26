@@ -20,6 +20,7 @@ Than you can navigate to the page <a href="http://localhost:8080/api">http://loc
 available methods and links.
 
 ### What do we use:
-- Spring
+- Spring MVC
+- Spring REST
 - Hibernate + PostgreSQL
 - React
