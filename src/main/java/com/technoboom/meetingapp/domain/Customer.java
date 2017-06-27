@@ -1,5 +1,6 @@
 package com.technoboom.meetingapp.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -25,6 +26,8 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String description;
+
+    private @Version @JsonIgnore Long version;
 
     /**
      * Default constructor for Customer

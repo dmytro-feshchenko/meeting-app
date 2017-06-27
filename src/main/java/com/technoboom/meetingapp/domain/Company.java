@@ -1,8 +1,11 @@
 package com.technoboom.meetingapp.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by IntelliJ IDEA.
@@ -22,8 +25,12 @@ public class Company {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
-    public String name;
-    public String description;
+    private String name;
+    private String description;
+    @OneToMany(fetch = FetchType.LAZY)
+    private Set<Team> teams = new HashSet<>(0);
+
+    private @Version @JsonIgnore Long version;
 
     /**
      * Default constructor for Company

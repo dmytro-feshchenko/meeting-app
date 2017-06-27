@@ -4,11 +4,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by IntelliJ IDEA.
  * Date: 6/27/17
- * Time: 6:03 PM
+ * Time: 10:17 PM
  * Project: MeetingApp
  * Package: com.technoboom.meetingapp.domain
  *
@@ -18,16 +19,25 @@ import javax.persistence.*;
  */
 @Data
 @Entity
-@Table(name = "teams")
-public class Team  {
+@Table(name = "events")
+public class Event {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String description;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "company_id", nullable = false)
-    private Company company;
+    private String location;
+    private Date startDate;
+    private Date endDate;
 
     private @Version @JsonIgnore Long version;
+
+    /**
+     * Default constructor for Event
+     */
+    public Event() {
+        name = "";
+        description = "";
+        location = "";
+    }
 }
