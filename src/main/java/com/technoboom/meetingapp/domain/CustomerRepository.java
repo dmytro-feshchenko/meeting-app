@@ -1,5 +1,6 @@
-package com.technoboom.meetingapp;
+package com.technoboom.meetingapp.domain;
 
+import com.technoboom.meetingapp.domain.Customer;
 import org.springframework.data.repository.CrudRepository;
 
 /**

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.technoboom</groupId>
@@ -163,29 +163,29 @@
 					<yarnVersion>v0.16.1</yarnVersion>
 				</configuration>
 			</plugin>
-			<!--<plugin>-->
-				<!--&lt;!&ndash; Copy the front end into the static folder for JARs&ndash;&gt;-->
-				<!--<artifactId>maven-resources-plugin</artifactId>-->
-				<!--<version>2.7</version>-->
-				<!--<executions>-->
-					<!--<execution>-->
-						<!--<id>copy-resources</id>-->
-						<!--<phase>generate-resources</phase>-->
-						<!--<goals>-->
-							<!--<goal>copy-resources</goal>-->
-						<!--</goals>-->
-						<!--<configuration>-->
-							<!--<outputDirectory>${basedir}/target/classes/static</outputDirectory>-->
-							<!--<resources>-->
-								<!--<resource>-->
-									<!--<directory>src/main/resources/dist</directory>-->
-									<!--<filtering>false</filtering>-->
-								<!--</resource>-->
-							<!--</resources>-->
-						<!--</configuration>-->
-					<!--</execution>-->
-				<!--</executions>-->
-			<!--</plugin>-->
+			<plugin>
+				<!-- Copy the front end into the static folder for JARs-->
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/classes/static</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/main/resources/dist</directory>
+									<filtering>false</filtering>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 

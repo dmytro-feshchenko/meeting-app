@@ -1,4 +1,4 @@
-package com.technoboom.meetingapp.controllers;
+package com.technoboom.meetingapp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Date: 6/26/17
  * Time: 10:21 PM
  * Project: MeetingApp
- * Package: com.technoboom.meetingapp.controllers
+ * Package: com.technoboom.meetingapp.controller
  *
  * @author dmitryi
  * @version 1.0

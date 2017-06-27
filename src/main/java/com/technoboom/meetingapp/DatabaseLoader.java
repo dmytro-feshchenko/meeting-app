@@ -1,5 +1,7 @@
 package com.technoboom.meetingapp;
 
+import com.technoboom.meetingapp.domain.Customer;
+import com.technoboom.meetingapp.domain.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

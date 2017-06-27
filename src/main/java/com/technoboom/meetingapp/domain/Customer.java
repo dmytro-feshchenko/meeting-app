@@ -1,4 +1,4 @@
-package com.technoboom.meetingapp;
+package com.technoboom.meetingapp.domain;
 
 import lombok.Data;
 
