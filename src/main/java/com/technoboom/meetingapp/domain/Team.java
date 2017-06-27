@@ -2,9 +2,7 @@ package com.technoboom.meetingapp.domain;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by IntelliJ IDEA.
@@ -19,8 +17,11 @@ import javax.persistence.Id;
  */
 @Data
 @Entity
+@Table(name = "teams")
 public class Team  {
-    private @Id @GeneratedValue Long id;
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private String description;
 }
