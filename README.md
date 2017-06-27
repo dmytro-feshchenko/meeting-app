@@ -20,7 +20,7 @@ Than you can navigate to the page <a href="http://localhost:8080/api">http://loc
 available methods and links.
 
 ### What do we use:
-- Spring MVC
-- Spring REST
+- Spring Boot + Spring REST
 - Hibernate + PostgreSQL
-- React
+- <a href="https://facebook.github.io/react/">React</a> - JavaScript library for building user interfaces
+- <a href="https://webpack.js.org/">Webpack 2</a> - for building frontend part of the application
