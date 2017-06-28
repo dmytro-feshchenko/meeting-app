@@ -108,10 +108,10 @@
 				<configuration>
 					<filesets>
 						<fileset>
-							<directory>src/main/resources/static</directory>
+							<directory>backend/src/main/resources/static</directory>
 						</fileset>
 						<fileset>
-							<directory>src/main/frontend/dist</directory>
+							<directory>backend/src/main/frontend/dist</directory>
 						</fileset>
 					</filesets>
 				</configuration>
@@ -178,7 +178,7 @@
 							<outputDirectory>${basedir}/target/classes/static</outputDirectory>
 							<resources>
 								<resource>
-									<directory>src/main/resources/dist</directory>
+									<directory>frontend/dist</directory>
 									<filtering>false</filtering>
 								</resource>
 							</resources>

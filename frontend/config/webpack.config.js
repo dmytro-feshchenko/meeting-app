@@ -2,12 +2,12 @@ var webpack = require('webpack');
 const path = require('path');
 
 var config = {
-    context: __dirname + '/src/main/resources/static', // `__dirname` is root of project and `src` is source
+    context: __dirname + '/../src/', // `__dirname` is root of project and `src` is source
     entry: {
-        app: './app.js',
+        app: './index.js',
     },
     output: {
-        path: __dirname + '/src/main/resources/dist', // `dist` is the destination
+        path: __dirname + '/../dist', // `dist` is the destination
         filename: '[name].bundle.js',
     },
     module: {
@@ -39,7 +39,7 @@ var config = {
     ],
     resolve: {
         modules: [
-            path.join(process.cwd(), 'src/main/resources/static'),
+            path.join(process.cwd(), 'frontend/src'),
             'node_modules'
         ],
         extensions: [ '*', '.js', '.json']
