@@ -20,7 +20,11 @@ Than you can navigate to the page <a href="http://localhost:8080/api">http://loc
 available methods and links.
 
 ### What do we use:
-- Spring Boot + Spring REST
-- Hibernate + PostgreSQL
+- Spring Boot (including Spring REST)
+- Maven
+- <a href="http://hibernate.org/">Hibernate ORM</a> - ORM framework for relational databases
+- <a href="https://www.postgresql.org">PostgreSQL</a> - open source relational database
 - <a href="https://facebook.github.io/react/">React</a> - JavaScript library for building user interfaces
+- <a href="http://redux.js.org/">Redux</a> - predictable state container for JavaScript applications.
 - <a href="https://webpack.js.org/">Webpack 2</a> - for building frontend part of the application
+- <a href="http://junit.org/junit4/">JUnit 4</a> - Java framework for writing repeatable tests

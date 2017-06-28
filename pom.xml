@@ -108,10 +108,10 @@
 				<configuration>
 					<filesets>
 						<fileset>
-							<directory>backend/src/main/resources/static</directory>
+							<directory>frontend/src/</directory>
 						</fileset>
 						<fileset>
-							<directory>backend/src/main/frontend/dist</directory>
+							<directory>frontend/dist/</directory>
 						</fileset>
 					</filesets>
 				</configuration>
