@@ -28,3 +28,4 @@ available methods and links.
 - <a href="http://redux.js.org/">Redux</a> - predictable state container for JavaScript applications.
 - <a href="https://webpack.js.org/">Webpack 2</a> - for building frontend part of the application
 - <a href="http://junit.org/junit4/">JUnit 4</a> - Java framework for writing repeatable tests
+- <a href="https://facebook.github.io/jest/">Jest</a> - JavaScript Testing Framework
